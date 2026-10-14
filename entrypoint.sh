@@ -4,6 +4,7 @@ cd /var/www/html
 
 if [ ! -f composer.json ]; then
   echo ">> Creating TYPO3 ${TYPO3_VERSION} project..."
+  rm -rf /tmp/typo3
   composer create-project "typo3/cms-base-distribution:${TYPO3_VERSION}" /tmp/typo3 --no-interaction
   cp -a /tmp/typo3/. /var/www/html/
   rm -rf /tmp/typo3
