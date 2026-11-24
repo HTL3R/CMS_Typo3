@@ -1,6 +1,6 @@
-# TYPO3 13
+# TYPO3 14
 
-TYPO3 publishes no official image, so this builds `php:8.3-apache` with the
+TYPO3 publishes no official image, so this builds `php:8.5-apache` with the
 required extensions and creates a Composer-based TYPO3 project into `./app`.
 
     docker compose up -d --build
